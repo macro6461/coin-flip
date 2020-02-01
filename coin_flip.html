@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip!</title>
+    <meta charset="utf-8">
+    <link href="styles/coin_flip.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <div id= "damn"></div>
+    <div id="score_box">
+      <p id="tally">Tally</p>
+      <ul>
+        <li> Heads: </li>
+        <li id="head_win"></li>
+      </ul>
+      <ul>
+        <li> Tails: </li>
+        <li id="tail_win"></li>
+      </ul>
+    </div>
+    <h1> Welcome to Heads Or Tails! </h1>
+    <input id="coin" type="image" src="images/heads.png" onclick="coinFlip(); score(); play();"/>
+    <h1 id="winner"></h1>
+    <h1 id="final_winner"></h1>
+    <h2> 1) Player one clicks on the coin to flip it. </h2>
+    <h2> 2) Then player two clicks and so on until you reach the turn limit (9 times). </h2>
+    <h2> 3) The winner is the player who won the majority of coin flips!</h2>
+    <h2> 4) Now flip it!</h2>
+    <audio id="audio" src="coin_toss.mp3"></audio>
+    <script src="coin_flip.js"></script>
+  </body>
+</html>
